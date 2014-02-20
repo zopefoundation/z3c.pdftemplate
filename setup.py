@@ -13,7 +13,11 @@
 ##############################################################################
 """Setup"""
 import os
+import sys
 from setuptools import setup, find_packages
+
+
+PY26 = sys.version_info[:2] == (2, 6)
 
 
 def read(*rnames):
@@ -62,7 +66,7 @@ setup(
     install_requires=[
         'setuptools',
         'z3c.rml',
-        'reportlab >= 2.4',
+        'reportlab >= 2.4' + (', < 3.0' if PY26 else ''),
         'zope.app.pagetemplate',
         'zope.app.publisher',
         'zope.component',
