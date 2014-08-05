@@ -27,7 +27,7 @@ setup(
     author_email="zope-dev@zope.org",
     description="PDF Template",
     long_description=(
-        read('README.txt')
+        read('README.rst')
         + '\n\n.. contents::\n\n' +
         read('src', 'z3c', 'pdftemplate', 'README.txt')
         + '\n\n' +
