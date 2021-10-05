@@ -1,3 +1,7 @@
+.. caution:: 
+
+    This repository has been archived. If you want to work on it please open a ticket in https://github.com/zopefoundation/meta/issues requesting its unarchival.
+
 Quickly generate PDF files using page templates and RML.
 
 Travis: |buildstatus|_
